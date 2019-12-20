@@ -20,18 +20,18 @@ for ($i = 0; $i < 50; $i++) {
 //$arr = [];
 
 // bubble
-//$bubble = new Bubble($arr, SORT_ASC);
-//var_export($bubble->sort());
+//$object = new Bubble($arr, SORT_ASC);
+//var_export($object->sort());
 //echo PHP_EOL;
-//$bubble->setOrder(SORT_DESC);
-//var_export($bubble->sort());
+//$object->setOrder(SORT_DESC);
+//var_export($object->sort());
 
 // quick
-//$quick = new Quick($arr, SORT_ASC);
-//var_export($quick->sort());
+//$object = new Quick($arr, SORT_ASC);
+//var_export($object->sort());
 //echo PHP_EOL;
-//$quick->setOrder(SORT_DESC);
-//var_export($quick->sort());
+//$object->setOrder(SORT_DESC);
+//var_export($object->sort());
 
 // insert
 //$object = new Insert($arr, SORT_ASC);
@@ -42,6 +42,13 @@ for ($i = 0; $i < 50; $i++) {
 
 // shell
 //$object = new Shell($arr, SORT_ASC);
+//var_export($object->sort());
+//echo PHP_EOL;
+//$object->setOrder(SORT_DESC);
+//var_export($object->sort());
+
+// select
+//$object = new Select($arr, SORT_ASC);
 //var_export($object->sort());
 //echo PHP_EOL;
 //$object->setOrder(SORT_DESC);
