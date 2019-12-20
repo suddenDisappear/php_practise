@@ -59,15 +59,11 @@ class Quick extends Sort
             }
             // 如果找到同时满足的i和j则交换两者顺序
             if ($i < $j) {
-                $tmp = $origin[$i];
-                $origin[$i] = $origin[$j];
-                $origin[$j] = $tmp;
+                $this->swap($origin[$i], $origin[$j]);
             }
         }
         // 交换基准值和最终停留位置（循环结束时最终停留位置始终为i===j）
-        $tmp = $origin[$j];
-        $origin[$j] = $ref;
-        $origin[$begin] = $tmp;
+        $this->swap($origin[$begin], $origin[$j]);
         if ($j > $begin) {
             $this->inPlaceRecursive($origin, $begin, $j - 1);
         }

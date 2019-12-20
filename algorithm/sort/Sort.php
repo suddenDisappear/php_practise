@@ -70,4 +70,16 @@ abstract class Sort implements Sorter
     {
         return $a - $b;
     }
+
+    /**
+     * 交换值
+     * @param mixed $a
+     * @param mixed $b
+     */
+    public function swap(&$a, &$b)
+    {
+        $t = $b;
+        $b = $a;
+        $a = $t;
+    }
 }

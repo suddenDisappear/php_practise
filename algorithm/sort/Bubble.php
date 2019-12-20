@@ -22,10 +22,8 @@ class Bubble extends Sort
             // 内循环减去$i，因为后$i个元素已经排序完成
             $num = 0;
             for ($j = 0; $j < $count - $i - 1; $j++) {
-                if ($this->shouldTransfer($origin[$j], $origin[$j+1])) {
-                    $tmp = $origin[$j];
-                    $origin[$j] = $origin[$j+1];
-                    $origin[$j+1] = $tmp;
+                if ($this->shouldSwap($origin[$j], $origin[$j+1])) {
+                    $this->swap($origin[$j], $origin[$j+1]);
                     $num++;
                 }
             }
@@ -43,7 +41,7 @@ class Bubble extends Sort
      * @param mixed $b
      * @return bool
      */
-    private function shouldTransfer($a, $b)
+    private function shouldSwap($a, $b)
     {
         $order = $this->getOrder();
         $result = $this->compare($a, $b);
