@@ -53,3 +53,10 @@ for ($i = 0; $i < 50; $i++) {
 //echo PHP_EOL;
 //$object->setOrder(SORT_DESC);
 //var_export($object->sort());
+
+// heap
+//$object = new Heap($arr, SORT_ASC);
+//var_export($object->sort());
+//echo PHP_EOL;
+//$object->setOrder(SORT_DESC);
+//var_export($object->sort());
