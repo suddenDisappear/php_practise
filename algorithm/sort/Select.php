@@ -37,9 +37,7 @@ class Select extends Sort
                 }
             }
             if ($pos !== $i) {
-                $tmp = $origin[$pos];
-                $origin[$pos] = $origin[$i];
-                $origin[$i] = $tmp;
+                $this->swap($origin[$pos], $origin[$i]);
             }
         }
     }

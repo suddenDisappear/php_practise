@@ -21,42 +21,19 @@ for ($i = 0; $i < 50; $i++) {
 
 // bubble
 //$object = new Bubble($arr, SORT_ASC);
-//var_export($object->sort());
-//echo PHP_EOL;
-//$object->setOrder(SORT_DESC);
-//var_export($object->sort());
-
 // quick
 //$object = new Quick($arr, SORT_ASC);
-//var_export($object->sort());
-//echo PHP_EOL;
-//$object->setOrder(SORT_DESC);
-//var_export($object->sort());
-
 // insert
 //$object = new Insert($arr, SORT_ASC);
-//var_export($object->sort());
-//echo PHP_EOL;
-//$object->setOrder(SORT_DESC);
-//var_export($object->sort());
-
 // shell
 //$object = new Shell($arr, SORT_ASC);
-//var_export($object->sort());
-//echo PHP_EOL;
-//$object->setOrder(SORT_DESC);
-//var_export($object->sort());
-
 // select
 //$object = new Select($arr, SORT_ASC);
-//var_export($object->sort());
-//echo PHP_EOL;
-//$object->setOrder(SORT_DESC);
-//var_export($object->sort());
-
 // heap
 //$object = new Heap($arr, SORT_ASC);
-//var_export($object->sort());
-//echo PHP_EOL;
-//$object->setOrder(SORT_DESC);
-//var_export($object->sort());
+// merge
+$object = new Merge($arr, SORT_ASC);
+var_export($object->sort());
+echo PHP_EOL;
+$object->setOrder(SORT_DESC);
+var_export($object->sort());
