@@ -32,7 +32,9 @@ for ($i = 0; $i < 50; $i++) {
 // heap
 //$object = new Heap($arr, SORT_ASC);
 // merge
-$object = new Merge($arr, SORT_ASC);
+//$object = new Merge($arr, SORT_ASC);
+// count
+$object = new Count($arr, SORT_ASC);
 var_export($object->sort());
 echo PHP_EOL;
 $object->setOrder(SORT_DESC);
