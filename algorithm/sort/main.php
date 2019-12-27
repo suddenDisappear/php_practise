@@ -34,7 +34,9 @@ for ($i = 0; $i < 50; $i++) {
 // merge
 //$object = new Merge($arr, SORT_ASC);
 // count
-$object = new Count($arr, SORT_ASC);
+//$object = new Count($arr, SORT_ASC);
+// radix
+$object = new Radix($arr, SORT_ASC);
 var_export($object->sort());
 echo PHP_EOL;
 $object->setOrder(SORT_DESC);
